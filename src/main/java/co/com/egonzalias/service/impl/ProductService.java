@@ -1,4 +1,4 @@
-package co.com.egonzalias.service;
+package co.com.egonzalias.service.impl;
 
 import co.com.egonzalias.dto.RegisterProductDTO;
 import co.com.egonzalias.entity.Products;

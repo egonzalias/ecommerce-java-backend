@@ -1,7 +1,7 @@
 package co.com.egonzalias.controller;
 
 import co.com.egonzalias.dto.*;
-import co.com.egonzalias.service.OrderService;
+import co.com.egonzalias.service.impl.OrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

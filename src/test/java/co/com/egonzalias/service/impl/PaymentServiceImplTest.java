@@ -1,4 +1,4 @@
-package co.com.egonzalias.service;
+package co.com.egonzalias.service.impl;
 
 import co.com.egonzalias.dto.CreatePaymentDTO;
 import co.com.egonzalias.dto.PaymentResponseDTO;
@@ -7,6 +7,7 @@ import co.com.egonzalias.entity.Payments;
 import co.com.egonzalias.exception.CustomError;
 import co.com.egonzalias.repository.OrderRepository;
 import co.com.egonzalias.repository.PaymentRepository;
+import co.com.egonzalias.service.impl.impl.PaymentServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -20,7 +21,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class PaymentServiceTest {
+class PaymentServiceImplTest {
 
     @Mock
     private PaymentRepository paymentRepository;
@@ -29,7 +30,7 @@ class PaymentServiceTest {
     private OrderRepository orderRepository;
 
     @InjectMocks
-    private PaymentService paymentService;
+    private PaymentServiceImpl paymentService;
 
     private Orders order;
 

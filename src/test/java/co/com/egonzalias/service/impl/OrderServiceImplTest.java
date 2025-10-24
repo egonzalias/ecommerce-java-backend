@@ -1,4 +1,4 @@
-package co.com.egonzalias.service;
+package co.com.egonzalias.service.impl;
 
 import co.com.egonzalias.dto.CreateOrderDTO;
 import co.com.egonzalias.dto.UpdateOrderDTO;
@@ -10,6 +10,7 @@ import co.com.egonzalias.repository.OrderProductRepository;
 import co.com.egonzalias.repository.OrderRepository;
 import co.com.egonzalias.repository.ProductRepository;
 import co.com.egonzalias.repository.UserRepository;
+import co.com.egonzalias.service.impl.impl.OrderServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
@@ -22,7 +23,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class OrderServiceTest {
+class OrderServiceImplTest {
 
     @Mock
     private OrderRepository orderRepository;
@@ -34,7 +35,7 @@ class OrderServiceTest {
     private UserRepository userRepository;
 
     @InjectMocks
-    private OrderService orderService;
+    private OrderServiceImpl orderService;
 
     @BeforeEach
     void setUp() {

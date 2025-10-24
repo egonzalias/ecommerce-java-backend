@@ -1,4 +1,4 @@
-package co.com.egonzalias.service.impl;
+package co.com.egonzalias.service.impl.impl;
 
 import co.com.egonzalias.dto.CreateOrderDTO;
 import co.com.egonzalias.dto.OrderProductResponseDTO;
@@ -13,7 +13,7 @@ import co.com.egonzalias.repository.OrderProductRepository;
 import co.com.egonzalias.repository.OrderRepository;
 import co.com.egonzalias.repository.ProductRepository;
 import co.com.egonzalias.repository.UserRepository;
-import co.com.egonzalias.service.OrderService;
+import co.com.egonzalias.service.impl.OrderService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

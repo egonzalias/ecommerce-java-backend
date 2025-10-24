@@ -1,4 +1,4 @@
-package co.com.egonzalias.service.impl;
+package co.com.egonzalias.service.impl.impl;
 
 import co.com.egonzalias.dto.CreatePaymentDTO;
 import co.com.egonzalias.dto.PaymentResponseDTO;
@@ -7,7 +7,7 @@ import co.com.egonzalias.entity.Payments;
 import co.com.egonzalias.exception.CustomError;
 import co.com.egonzalias.repository.OrderRepository;
 import co.com.egonzalias.repository.PaymentRepository;
-import co.com.egonzalias.service.PaymentService;
+import co.com.egonzalias.service.impl.PaymentService;
 import co.com.egonzalias.util.OrderStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,9 +1,9 @@
-package co.com.egonzalias.service.impl;
+package co.com.egonzalias.service.impl.impl;
 
 import co.com.egonzalias.dto.RegisterProductDTO;
 import co.com.egonzalias.entity.Products;
 import co.com.egonzalias.repository.ProductRepository;
-import co.com.egonzalias.service.ProductService;
+import co.com.egonzalias.service.impl.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

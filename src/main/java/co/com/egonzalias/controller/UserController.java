@@ -4,7 +4,7 @@ import co.com.egonzalias.dto.LoginRequestDTO;
 import co.com.egonzalias.dto.LoginResponseDTO;
 import co.com.egonzalias.dto.RegisterUserDTO;
 import co.com.egonzalias.entity.Users;
-import co.com.egonzalias.service.UserService;
+import co.com.egonzalias.service.impl.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

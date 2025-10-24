@@ -2,7 +2,7 @@ package co.com.egonzalias.controller;
 
 import co.com.egonzalias.dto.RegisterProductDTO;
 import co.com.egonzalias.entity.Products;
-import co.com.egonzalias.service.ProductService;
+import co.com.egonzalias.service.impl.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

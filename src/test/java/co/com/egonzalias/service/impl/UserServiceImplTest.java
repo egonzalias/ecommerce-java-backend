@@ -1,4 +1,4 @@
-package co.com.egonzalias.service;
+package co.com.egonzalias.service.impl;
 import co.com.egonzalias.dto.JwtUserInfo;
 import co.com.egonzalias.dto.LoginRequestDTO;
 import co.com.egonzalias.dto.LoginResponseDTO;
@@ -8,6 +8,7 @@ import co.com.egonzalias.exception.CustomError;
 import co.com.egonzalias.repository.RoleRepository;
 import co.com.egonzalias.repository.UserRepository;
 import co.com.egonzalias.security.JwtUtil;
+import co.com.egonzalias.service.impl.impl.UserServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
@@ -18,7 +19,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class UserServiceTest {
+class UserServiceImplTest {
 
     @Mock
     private UserRepository userRepository;
@@ -33,7 +34,7 @@ class UserServiceTest {
     private JwtUtil jwtUtil;
 
     @InjectMocks
-    private UserService userService;
+    private UserServiceImpl userService;
 
     @BeforeEach
     void setUp() {

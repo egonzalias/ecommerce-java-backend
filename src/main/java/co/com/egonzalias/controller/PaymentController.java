@@ -2,7 +2,7 @@ package co.com.egonzalias.controller;
 
 import co.com.egonzalias.dto.CreatePaymentDTO;
 import co.com.egonzalias.dto.PaymentResponseDTO;
-import co.com.egonzalias.service.PaymentService;
+import co.com.egonzalias.service.impl.PaymentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,4 +1,4 @@
-package co.com.egonzalias.service.impl;
+package co.com.egonzalias.service.impl.impl;
 
 import co.com.egonzalias.dto.JwtUserInfo;
 import co.com.egonzalias.dto.LoginRequestDTO;
@@ -12,7 +12,7 @@ import co.com.egonzalias.exception.CustomError;
 import co.com.egonzalias.repository.RoleRepository;
 import co.com.egonzalias.repository.UserRepository;
 import co.com.egonzalias.security.JwtUtil;
-import co.com.egonzalias.service.UserService;
+import co.com.egonzalias.service.impl.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,9 @@
-package co.com.egonzalias.service;
+package co.com.egonzalias.service.impl;
 
 import co.com.egonzalias.dto.RegisterProductDTO;
 import co.com.egonzalias.entity.Products;
 import co.com.egonzalias.repository.ProductRepository;
+import co.com.egonzalias.service.impl.impl.ProductServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
@@ -18,13 +19,13 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class ProductServiceTest {
+class ProductServiceImplTest {
 
     @Mock
     private ProductRepository productRepository;
 
     @InjectMocks
-    private ProductService productService;
+    private ProductServiceImpl productService;
 
     @BeforeEach
     void setUp() {
