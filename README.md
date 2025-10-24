@@ -76,3 +76,16 @@ docker-compose.yml
 
 - Tables and initial data are automatically created when the PostgreSQL container starts using the `db/init.sql` script.
 - Adjust the variables in `.env` according to your local environment.
+
+## API Endpoints (Insomnia Collection)
+
+We include an Insomnia workspace JSON file with all the API endpoints for testing purposes.
+
+### How to Use
+
+1. Open **Insomnia**.
+2. Go to **File → Import → From File**.
+3. Select the file `insomnia/insomnia-collection.json` (path relative to this repo).
+4. All endpoints and environment settings will be available in your workspace for testing.
+
+> Note: No Insomnia account is needed to import and use this collection.
