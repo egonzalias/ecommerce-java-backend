@@ -1,0 +1,590 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1741036190344
+  modified: 1741036190344
+  description: ""
+collection:
+  - name: Todo EGR
+    meta:
+      id: fld_e26315b5bd1e4656bcecb328d4106f8b
+      created: 1747423720225
+      modified: 1755122841815
+      sortKey: -1747423720225
+      description: ""
+  - name: Powerforward
+    meta:
+      id: fld_9ed09c113c7e43d194154b0b6de95a5a
+      created: 1750339378183
+      modified: 1750439872925
+      sortKey: -1750339378183
+      description: ""
+  - name: Powerschool
+    meta:
+      id: fld_b0cb45f05f2f4069b4f5406556c150ae
+      created: 1750956248063
+      modified: 1750956388850
+      sortKey: -1750956248063
+      description: ""
+  - name: Fecth
+    meta:
+      id: fld_17907a2f8e4544df9e002d22aa36e57a
+      created: 1753726850312
+      modified: 1753726974373
+      sortKey: -1753726850312
+      description: ""
+  - name: Node
+    meta:
+      id: fld_63a5f89607bc4fbabe5a03337098a110
+      created: 1755026073205
+      modified: 1755026073205
+      sortKey: -1755026073205
+      description: ""
+  - name: Instances Routing
+    meta:
+      id: fld_ee1dbe630c7741bbbc7ee9e3e04950b8
+      created: 1755122866458
+      modified: 1755122872710
+      sortKey: -1755122866458
+      description: ""
+  - name: Bootcamp
+    meta:
+      id: fld_717a0a8fc33d46cdba3bd6d2fcea1c32
+      created: 1755965373636
+      modified: 1755965373636
+      sortKey: -1755965373636
+      description: ""
+  - name: blossom
+    meta:
+      id: fld_81f121406e6849c3b0d90b7e67cf62fa
+      created: 1761256060944
+      modified: 1761344221914
+      sortKey: -1761256060944
+      description: ""
+    children:
+      - url: http://localhost:8080/api/users/register
+        name: Register User
+        meta:
+          id: req_eccfc86c13ca4e1f804682b322a58041
+          created: 1761256074569
+          modified: 1761336780176
+          isPrivate: false
+          description: ""
+          sortKey: -1761256074569
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "username": "egonzalias",
+              "email": "edwin@mail.com",
+              "password": "123456",
+              "role": "ADMIN"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZ29uemFsaWFzIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzYxMzIzNzIzLCJleHAiOjE3NjEzMjczMjN9.bAMWWSga9VAHTwdtpGRMXk0BIHGQXtEjosfTmXpByCk
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/users/login
+        name: Login User
+        meta:
+          id: req_16b5fe537b90406bb1da8a638da43951
+          created: 1761260138094
+          modified: 1761342682833
+          isPrivate: false
+          description: ""
+          sortKey: -1761104432842.75
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "username": "egonzalias",
+              "password": "123456"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/products/register
+        name: Create Product
+        meta:
+          id: req_1abe4896d45e490f9db27e1c48552d6c
+          created: 1761323836666
+          modified: 1761328692265
+          isPrivate: false
+          description: ""
+          sortKey: -1760649507664
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "name": "Coca Cola 350ML",
+              "description": "Bebida gaseosa",
+            	"category": "BEBIDAS",
+              "price": 1500
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZ29uemFsaWFzIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzYxMzI4NjgzLCJleHAiOjE3NjEzMzIyODN9.YzPxvdWuKdjQTSYTzDcSFqnEVDAeucKnseYDGXvN_Uw
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/orders/create
+        name: Create Order
+        meta:
+          id: req_2d7a618bf3e54361aaad40b30030f258
+          created: 1761329703457
+          modified: 1761333144503
+          isPrivate: false
+          description: ""
+          sortKey: -1760346224211.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "userId": 1,
+              "products": [
+                {
+                  "productId": 33,
+                  "quantity": 2
+                },
+                {
+                  "productId": 35,
+                  "quantity": 1
+                },
+                {
+                  "productId": 75,
+                  "quantity": 4
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRybyIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc2MTMzMTQ0NCwiZXhwIjoxNzYxMzM1MDQ0fQ.5zHR6wyDAGuDtlX9jBzLBOv9uKCmwH9BKG4f_eu4RgQ
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/orders/update/1
+        name: Update Order
+        meta:
+          id: req_ca34caef74514d6dbce0e9cb0c5040fe
+          created: 1761333434794
+          modified: 1761334210430
+          isPrivate: false
+          description: ""
+          sortKey: -1760194582485.25
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "status": "CANCELLED",
+              "products": [
+                {
+                  "productId": 45,
+                  "quantity": 3
+                },
+                {
+                  "productId": 50,
+                  "quantity": 2
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRybyIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc2MTMzMTQ0NCwiZXhwIjoxNzYxMzM1MDQ0fQ.5zHR6wyDAGuDtlX9jBzLBOv9uKCmwH9BKG4f_eu4RgQ
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/orders/delete/1
+        name: Delete Order
+        meta:
+          id: req_d4c396b64c984b228c704541363adbec
+          created: 1761334934236
+          modified: 1761334964582
+          isPrivate: false
+          description: ""
+          sortKey: -1760118761622.125
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRybyIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc2MTMzMTQ0NCwiZXhwIjoxNzYxMzM1MDQ0fQ.5zHR6wyDAGuDtlX9jBzLBOv9uKCmwH9BKG4f_eu4RgQ
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/products/get/35
+        name: Get Product
+        meta:
+          id: req_8d72b67f768a4344b86ea8b61ddd82ae
+          created: 1761335039243
+          modified: 1761335377584
+          isPrivate: false
+          description: ""
+          sortKey: -1760497865937.75
+        method: GET
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "name": "Coca Cola 350ML",
+              "description": "Bebida gaseosa",
+            	"category": "BEBIDAS",
+              "price": 1500
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZ29uemFsaWFzIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzYxMzM1MjIyLCJleHAiOjE3NjEzMzg4MjJ9.dFy8RxBoXJELI1hZbOwMwWULs61QlgmMK9c5hDI7Df0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/products/delete/32
+        name: Delete Product
+        meta:
+          id: req_e619f74631284b2b810e64d026078e2e
+          created: 1761335409876
+          modified: 1761335441340
+          isPrivate: false
+          description: ""
+          sortKey: -1760422045074.625
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "name": "Coca Cola 350ML",
+              "description": "Bebida gaseosa",
+            	"category": "BEBIDAS",
+              "price": 1500
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZ29uemFsaWFzIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzYxMzM1MjIyLCJleHAiOjE3NjEzMzg4MjJ9.dFy8RxBoXJELI1hZbOwMwWULs61QlgmMK9c5hDI7Df0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/products/search?name=libro&category=books&page=1&size=5
+        name: Search Products
+        meta:
+          id: req_83cf863d12e24978bdfb36c72614853d
+          created: 1761335778906
+          modified: 1761335878962
+          isPrivate: false
+          description: ""
+          sortKey: -1760459955506.1875
+        method: GET
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "name": "Coca Cola 350ML",
+              "description": "Bebida gaseosa",
+            	"category": "BEBIDAS",
+              "price": 1500
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZ29uemFsaWFzIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzYxMzM1MjIyLCJleHAiOjE3NjEzMzg4MjJ9.dFy8RxBoXJELI1hZbOwMwWULs61QlgmMK9c5hDI7Df0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/payments/pay
+        name: Payment Order
+        meta:
+          id: req_a5d06d7e1f644898a31b6783970915e5
+          created: 1761336790773
+          modified: 1761337751242
+          isPrivate: false
+          description: ""
+          sortKey: -1760952791116.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "orderId": 2,
+              "paymentMethod": "CREDIT_CARD",
+            	"amount": 1970
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_a8a6311cddaa4f6c9202a784bba50149
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_0c2067135056412a949aae4b3ef77995
+          - id: pair_09c48024962541529bad5ddebdf2b87d
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRybyIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc2MTMzNzA5MSwiZXhwIjoxNzYxMzQwNjkxfQ.D482SzDtcqE7gGEqKXz6HG_FK69nVyV5_GtcydIAc2w
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741036210988
+    modified: 1761331425344
+  cookies:
+    - key: JSESSIONID
+      value: 189F7F3B87D9A57AA544A59FE56A3EDB
+      domain: devlightschools.powerschool.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-03-03T21:10:51.043Z
+      lastAccessed: 2025-09-03T14:27:46.204Z
+      sameSite: none
+      id: 6633ddd6-fa86-439f-b0bb-e3866a2a3761
+    - key: BIGipServerdevlightschools_pool
+      value: 1402215852.20480.0000
+      domain: devlightschools.powerschool.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-03-03T21:10:51.045Z
+      lastAccessed: 2025-03-03T21:10:51.045Z
+      sameSite: none
+      id: 8c7892eb-bed2-4d34-ada4-5c71257e7549
+    - key: visid_incap_2853107
+      value: EZ1XjN9eSu6jz4amHh09BXLJd2gAAAAAQUIPAAAAAAAWD0zprJWnR1FK48RFKvcZ
+      domain: powerschool.com
+      path: /
+      httpOnly: true
+      hostOnly: false
+      creation: 2025-03-03T21:10:51.045Z
+      lastAccessed: 2025-07-16T15:46:57.745Z
+      id: d2397831-0547-4389-98a2-b997b2ba1c5a
+    - key: incap_ses_8083_2853107
+      value: a
+      maxAge: 0
+      domain: powerschool.com
+      path: /
+      hostOnly: false
+      creation: 2025-03-03T21:10:51.047Z
+      lastAccessed: 2025-04-22T19:33:55.251Z
+      id: 2d0cd5c3-13da-4c68-8973-e11d48df8e0d
+    - key: JSESSIONID
+      value: 4E09B0EDEE7AC836C239E579E81CCD9C
+      domain: localhost
+      path: /todo
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-05-20T20:44:06.497Z
+      lastAccessed: 2025-05-21T21:08:16.600Z
+      id: b54907f9-9eae-4ad5-8e44-a32e843e44c7
+    - key: incap_ses_9220_2853107
+      value: a
+      maxAge: 0
+      domain: powerschool.com
+      path: /
+      hostOnly: false
+      creation: 2025-06-25T19:51:56.867Z
+      lastAccessed: 2025-09-03T14:33:14.027Z
+      id: 03dad68c-2651-4d73-a78a-4e72b05167e3
+    - key: incap_ses_8221_2714889
+      value: a
+      maxAge: 0
+      domain: powerschool.com
+      path: /
+      hostOnly: false
+      creation: 2025-07-16T15:46:57.743Z
+      lastAccessed: 2025-09-03T14:27:46.208Z
+      id: e594d4a3-a047-4eb4-9034-672b52939f63
+    - key: incap_ses_9084_2853107
+      value: a
+      maxAge: 0
+      domain: powerschool.com
+      path: /
+      hostOnly: false
+      creation: 2025-07-16T15:46:57.745Z
+      lastAccessed: 2025-09-03T14:27:46.209Z
+      id: af76013f-78a8-4a87-93ac-08f3b691f9c5
+    - key: incap_ses_9029_2853107
+      value: qnyyCklFalw1cm9ZEnRNfWRQuGgAAAAAkopgEe//urN6g1om+920sQ==
+      domain: powerschool.com
+      path: /
+      hostOnly: false
+      creation: 2025-09-03T14:27:46.209Z
+      lastAccessed: 2025-09-03T14:27:46.209Z
+      id: 1455de0c-2b6d-4461-bd28-517b5bd021e7
+    - key: JSESSIONID
+      value: AE2AB2872D3C9D733CE2AF8E268B4663
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-10-23T21:48:24.890Z
+      lastAccessed: 2025-10-24T18:43:45.343Z
+      id: 41bf09e4-3f91-4b4e-902b-38ac181d8cda
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741036210864
+    modified: 1758298463635
+    isPrivate: false
+  subEnvironments:
+    - name: Local
+      meta:
+        id: env_ac8c3d904b9646a08e2a76dda1191f14
+        created: 1758298089626
+        modified: 1758298372388
+        isPrivate: false
+        sortKey: 1758298089626
+      data:
+        URL_CREDIYA_USERS: http://localhost:8080
+        URL_CREDIYA_REQUESTS: http://localhost:8081
+        URL_CREDIYA_REPORTS: http://localhost:8082
+    - name: Prod
+      meta:
+        id: env_b5248ffc2b1b4320a154f29e7ba73819
+        created: 1758298192427
+        modified: 1758298412258
+        isPrivate: false
+        sortKey: 1758298089676
+      data:
+        URL_CREDIYA_USERS: https://v6ljwkpmn3.execute-api.us-east-1.amazonaws.com
+        URL_CREDIYA_REQUESTS: https://v6ljwkpmn3.execute-api.us-east-1.amazonaws.com
+        URL_CREDIYA_REPORTS: https://v6ljwkpmn3.execute-api.us-east-1.amazonaws.com
