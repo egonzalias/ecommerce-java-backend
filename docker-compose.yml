@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: ecommerce_db
+    ports:
+      - "5433:5432"
+    env_file:
+      - .env
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - ecommerce_net
+
+  app:
+    build: .
+    container_name: ecommerce_app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      SPRING_DATASOURCE_DRIVER-CLASS-NAME: ${SPRING_DATASOURCE_DRIVER-CLASS-NAME}
+      SPRING_JPA_HIBERNATE_DDL-AUTO: ${SPRING_JPA_HIBERNATE_DDL-AUTO}
+      SPRING_JPA_DATABASE-PLATFORM: ${SPRING_JPA_DATABASE-PLATFORM}
+      SPRING_JPA_SHOW_SQL: ${SPRING_JPA_SHOW_SQL}
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - ecommerce_net
+
+volumes:
+  postgres_data:
+
+networks:
+  ecommerce_net:
