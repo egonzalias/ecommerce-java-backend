@@ -1,4 +1,4 @@
-package co.com.egonzalias.entity;
+package co.com.egonzalias.util;
 
 public enum OrderStatus {
     PENDING,

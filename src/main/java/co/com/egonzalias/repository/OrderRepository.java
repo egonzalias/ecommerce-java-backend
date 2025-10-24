@@ -1,7 +1,7 @@
 package co.com.egonzalias.repository;
 
 import co.com.egonzalias.entity.Orders;
-import co.com.egonzalias.entity.OrderStatus;
+import co.com.egonzalias.util.OrderStatus;
 import co.com.egonzalias.entity.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,7 @@
 package co.com.egonzalias.entity;
 
 
+import co.com.egonzalias.util.OrderStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;
