@@ -45,6 +45,13 @@ SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
 SPRING_JPA_SHOW_SQL=true
 
 SERVER_PORT=8080
+
+AWS_REGION=us-east-1
+AWS_URL=https://sqs.us-east-1.amazonaws.com
+AWS_ACCOUNT_ID=
+AWS_QUEUE_NAME=loan-request-status-updates
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
 ```
 
 3. Start the application with Docker Compose:
