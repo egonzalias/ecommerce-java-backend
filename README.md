@@ -96,3 +96,42 @@ We include an Insomnia workspace JSON file with all the API endpoints for testin
 4. All endpoints and environment settings will be available in your workspace for testing.
 
 > Note: No Insomnia account is needed to import and use this collection.
+>
+
+Swagger API Documentation
+
+This project includes Swagger for API documentation and testing. You can easily explore and test all endpoints directly from a web interface.
+
+Access Swagger UI:
+
+Once the application is running, Swagger UI is available at:
+
+http://localhost:8080/swagger-ui.html
+
+
+Features:
+
+Interactive documentation for all API endpoints
+
+Automatic generation of request/response models
+
+Test endpoints directly from the browser
+
+Supports environment-specific configurations
+
+Usage:
+
+Start the backend using Docker Compose:
+
+docker-compose up --build
+
+
+Open your browser and navigate to http://localhost:8080/swagger-ui.html.
+
+Explore endpoints, view models, and execute requests directly.
+
+Notes:
+
+Swagger uses the same base URL and port as the backend (http://localhost:8080).
+
+All changes in your controllers or request/response models will automatically be reflected in Swagger UI
