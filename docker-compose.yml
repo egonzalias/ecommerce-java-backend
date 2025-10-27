@@ -30,6 +30,8 @@ services:
       AWS_URL: ${AWS_URL}
       AWS_ACCOUNT_ID: ${AWS_ACCOUNT_ID}
       AWS_QUEUE_NAME: ${AWS_QUEUE_NAME}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
     env_file:
       - .env
     depends_on:

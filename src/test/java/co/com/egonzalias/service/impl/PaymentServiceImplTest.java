@@ -29,6 +29,9 @@ class PaymentServiceImplTest {
     @Mock
     private OrderRepository orderRepository;
 
+    @Mock
+    private SqsService sqsService;
+
     @InjectMocks
     private PaymentServiceImpl paymentService;
 
@@ -60,16 +63,13 @@ class PaymentServiceImplTest {
 
         PaymentResponseDTO response = paymentService.createPayment(dto);
 
-        // Verificar que la respuesta tenga los datos correctos
         assertEquals(1L, response.orderId());
         assertEquals(10L, response.paymentId());
         assertEquals("CREDIT_CARD", response.paymentMethod());
         assertNotNull(response.paidAt());
 
-        // Verificar que la orden se actualizó a PAID
         assertEquals("PAID", order.getStatus());
 
-        // Verificar que se llamó a los repositorios
         verify(paymentRepository, times(1)).save(any(Payments.class));
         verify(orderRepository, times(1)).save(order);
     }
