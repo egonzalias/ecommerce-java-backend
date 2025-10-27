@@ -98,7 +98,7 @@ We include an Insomnia workspace JSON file with all the API endpoints for testin
 > Note: No Insomnia account is needed to import and use this collection.
 >
 
-Swagger API Documentation
+## Swagger API Documentation
 
 This project includes Swagger for API documentation and testing. You can easily explore and test all endpoints directly from a web interface.
 
